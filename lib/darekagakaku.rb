@@ -1,5 +1,5 @@
 %w(open-uri net/http nokogiri).each{|x| require x}
-%w(version core).each{|x| require  File.expand_path("lib/darekagakaku/#{x}")}
+%w(version core).each{|x| require "darekagakaku/#{x}"}
 
 module Darekagakaku
   SERVER = "http://darekagakaku.herokuapp.com"
